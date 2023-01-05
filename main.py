@@ -47,7 +47,7 @@ def is_known():
     next_card()
     #To save progress, create new list (start with pd DF)
     data = pd.DataFrame(to_learn)
-    data.to_csv("data/words_to_learn.csv")
+    data.to_csv("data/words_to_learn.csv", index = False)
 
 #--UI:
 window = Tk()
